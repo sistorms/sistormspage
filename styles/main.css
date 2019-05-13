@@ -47,9 +47,10 @@ body {
 
 img.logo
 {
-  height: 70px;
-  width: 310px;
+  height: 100px;
+  width: 450px;
   display:block;
+  margin-top: 45px !important;
   margin:auto;
   position: relative;
 }
@@ -79,7 +80,7 @@ i.fa:hover {
 
 .cover h3
 {
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 10px !important;
   
@@ -90,6 +91,7 @@ i.fa:hover {
  */
   text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, 
   #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -145,11 +147,10 @@ i.fa:hover {
 
 .cover-heading {
 
-  letter-spacing: 5px !important;
   text-transform: uppercase;
   margin-bottom: 7rem;
   margin-top: 2rem;
-  font-size: 35px !important;
+  font-size: 25px !important;
   color: white;
   font-family: Bungee Hairline;
   font-weight: bolder;
@@ -183,10 +184,70 @@ i.fa:hover {
 
 
 
-/* RESPONSIVE */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
 
-/*////////////////////////////////////////////////////// Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/************************** RESPONSIVE **************************/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+   .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  img.logo {
+    margin-top: 4rem;
+  }
+  .cover-heading {
+    margin-bottom: 9rem;
+  }
+
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
   .masthead {
     position: fixed;
     top: 0;
@@ -207,25 +268,12 @@ i.fa:hover {
     /* Must be percentage or pixels for horizontal alignment */
   }
   .cover-heading {
-    letter-spacing: -1px !important;}
-}
-  .cover h3 {
-       float: center;
+    margin-bottom: 9rem;
   }
-  img.logo
-{
-  float: center;
-}
-  .masthead-brand {
-    float: center;
-  }
-  .nav-masthead {
-    float: center;
-  }
-} 
 
-/*////////////////////////////////////////////////////// Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px){
+  }
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
   .masthead {
     position: fixed;
     top: 0;
@@ -245,33 +293,26 @@ i.fa:hover {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
+
+  img.logo {
+    height: 4.5rem;
+    width: 20rem;
+  }
   .cover-heading {
-    font-size: 8rem !important; 
-    letter-spacing: -1px !important;
-    margin-bottom: 3rem !important;}
+    margin-bottom: 9.5rem;
+  }
 }
-  .cover h3 {
-       float: center;
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .masthead {
+    position: fixed;
+    top: 0;
   }
-
-  img.logo{
-    margin-top: 50px;
-    float: center;
-}
-  .masthead-brand {
-    float: center;
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
   }
-  .nav-masthead {
-    float: center;
-  }
-} 
-
-} 
-
-/*////////////////////////////////////////////////////// Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Pull out the header and footer */
-
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -284,22 +325,27 @@ i.fa:hover {
     /* Must be percentage or pixels for horizontal alignment */
   }
 
-  .cover-heading { 
-    letter-spacing: -1px !important;}
+  img.logo {
+    height: 4.5rem;
+    width: 20rem;
+  }
+  .cover-heading {
+    margin-bottom: 9rem;
+  }
 }
-  .cover h3 {
-       float: center;
-  }
-} 
 
-/*////////////////////////////////////////////////////// Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 1060px;
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  .masthead {
+    position: fixed;
+    top: 0;
   }
-    /* Start the vertical centering */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
@@ -311,25 +357,15 @@ i.fa:hover {
     /* Must be percentage or pixels for horizontal alignment */
   }
 
+  img.logo {
+    height: 4.5rem;
+    width: 20rem;
+  }
   .cover-heading {
-    letter-spacing: -1px !important;}
-}
-  .cover h3 {
-       float: center;
+    margin-bottom: 9rem;
   }
-} 
 
-/*////////////////////////////////////////////////////// Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 1200px;
-  }
-    /* Start the vertical centering */
-    img.logo
-  {
-  margin-top: -50rem !important;
-  float: center;
-  }
 }
+
+
+
