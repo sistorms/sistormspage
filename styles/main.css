@@ -38,7 +38,9 @@ body {
   background-size: cover;
   text-align: center;
   font-family: 'inder', sans-serif;
-  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+  linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+  linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
   background-size: 10px 10px, 10px 10px, 10px 5px;
   background-position: 0px 0px, 5px 5px, 0px 0px;
 }
@@ -65,13 +67,15 @@ i.fa {
   background: transparent;
   border-radius: 50%;
   text-shadow: 2px 2px black;
+  box-shadow: #FFF 0px 0px 4px, #FFF 0px 0px 4px, #FF2D95 0px 0px 9px, #FF2D95 0px 0px 14px, #FF2D95 0px 0px 24px;
 
 }
 
 i.fa:hover {
-    box-shadow: #FFF 0px 0px 4px, #FFF 0px 0px 9px, #FF2D95 0px 0px 14px, #FF2D95 0px 0px 19px, #FF2D95 0px 0px 29px;
+    box-shadow: #FFF 0px 0px 4px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px;
     transition: 0.2s ease;
 }
+
 
 .cover h3
 {
@@ -84,7 +88,8 @@ i.fa:hover {
   /*text-shadow: 2px 2px black;
   text-shadow: black 0px 0px 5px, black 0px 0px 10px, black 0px 0px 15px;
  */
-text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, 
+  #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -130,15 +135,6 @@ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 
   display: inline-block;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: center;
-  }
-  .nav-masthead {
-    float: center;
-  }
-}
-
 /*
  * Cover
  */
@@ -150,16 +146,13 @@ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 
 .cover-heading {
 
   letter-spacing: 5px !important;
+  text-transform: uppercase;
   margin-bottom: 7rem;
   margin-top: 2rem;
-  font-size: 40px !important;
+  font-size: 35px !important;
   color: white;
-}
-
-@media (min-width: 768px) {
-  .cover-heading {
-    font-size: 3rem;
-    letter-spacing: 15px;}
+  font-family: Bungee Hairline;
+  font-weight: bolder;
 }
 
 .cover-copy {
@@ -177,11 +170,23 @@ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 
 }
 
 
-/*
- * Affix and center
- */
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
+/*text slider*/
+.slide.cycle-slide
+{
+    width: 100%;
+}
+
+#text_slider
+{
+  margin: auto;
+}
+
+
+
+/* RESPONSIVE */
+
+/*////////////////////////////////////////////////////// Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .masthead {
     position: fixed;
     top: 0;
@@ -201,23 +206,130 @@ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
+  .cover-heading {
+    letter-spacing: -1px !important;}
 }
+  .cover h3 {
+       float: center;
+  }
+  img.logo
+{
+  float: center;
+}
+  .masthead-brand {
+    float: center;
+  }
+  .nav-masthead {
+    float: center;
+  }
+} 
 
-@media (min-width: 992px) {
+/*////////////////////////////////////////////////////// Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */
+  }
+  .cover-heading {
+    font-size: 8rem !important; 
+    letter-spacing: -1px !important;
+    margin-bottom: 3rem !important;}
+}
+  .cover h3 {
+       float: center;
+  }
+
+  img.logo{
+    margin-top: 50px;
+    float: center;
+}
+  .masthead-brand {
+    float: center;
+  }
+  .nav-masthead {
+    float: center;
+  }
+} 
+
+} 
+
+/*////////////////////////////////////////////////////// Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Pull out the header and footer */
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .cover-heading { 
+    letter-spacing: -1px !important;}
+}
+  .cover h3 {
+       float: center;
+  }
+} 
+
+/*////////////////////////////////////////////////////// Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .masthead,
   .mastfoot,
   .cover-container {
     width: 1060px;
   }
-}
-
-/*text slider*/
-.slide.cycle-slide
-{
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
     width: 100%;
-}
+    /* Must be percentage or pixels for horizontal alignment */
+  }
 
-#text_slider
-{
-  margin: auto;
+  .cover-heading {
+    letter-spacing: -1px !important;}
+}
+  .cover h3 {
+       float: center;
+  }
+} 
+
+/*////////////////////////////////////////////////////// Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1200px;
+  }
+    /* Start the vertical centering */
+    img.logo
+  {
+  margin-top: -50rem !important;
+  float: center;
+  }
 }

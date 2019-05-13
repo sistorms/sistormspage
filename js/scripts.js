@@ -4,7 +4,7 @@ $(function () {
 	$('#text_slider').cycle({
 		fx : 'fade',
 		timeout: 900,
-		speed: 500,
+		speed: 100,
 		slides: '.slide'
 	});
     
