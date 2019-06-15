@@ -68,13 +68,13 @@ i.fa {
   background: transparent;
   border-radius: 50%;
   text-shadow: 2px 2px black;
-  box-shadow: #FFF 0px 0px 4px, #FFF 0px 0px 4px, #95BADD 0px 0px 9px, #95BADD 0px 0px 14px,#95BADD 0px 0px 24px;
+  box-shadow: #FFF 0px 0px 4px, #FFF 0px 0px 4px, #a9d1f7 0px 0px 9px, #a9d1f7 0px 0px 14px,#a9d1f7 0px 0px 24px;
 
 }
 
 i.fa:hover {
-    box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 	#95BADD 0px 0px 15px, 
-  	#95BADD 0px 0px 20px, 	#95BADD 0px 0px 30px, 	#95BADD 0px 0px 40px;
+    box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 	#a9d1f7 0px 0px 15px, 
+  	#a9d1f7 0px 0px 20px, 	#a9d1f7 0px 0px 30px, 	#a9d1f7 0px 0px 40px;
     transition: 0.2s ease;
 }
 
@@ -90,8 +90,8 @@ i.fa:hover {
   /*text-shadow: 2px 2px black;
   text-shadow: black 0px 0px 5px, black 0px 0px 10px, black 0px 0px 15px;
  */
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 	#95BADD 0px 0px 15px, 
-  	#95BADD 0px 0px 20px, 	#95BADD 0px 0px 30px, 	#95BADD 0px 0px 40px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 	#a9d1f7 0px 0px 15px, 
+  	#a9d1f7 0px 0px 20px, 	#a9d1f7 0px 0px 30px, 	#a9d1f7 0px 0px 40px;
 
 }
 
