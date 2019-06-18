@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SISTORMS</title>
+	<!-- Seccion de links -->
+		<!-- EL CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- ICONOS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+		<!-- EFECTOS DE APARECER LOS CUADRITOS -->
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="ccs/font-awesome-animation.min.css">
+	<!-- FIN DE LINKS -->
+		
+<body>
+	<!-- Seccion de NAVBAR -->
+			<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href ="javascript:void(0)" onclick="openNav2()"> <i class="fa fa-fw fa-bolt" onclick="openNav()"></i></a>
+			<a href ="#"> <i class="fa fa-fw fa-bolt"></i></a>
+			<a href ="#"> <i class="fa fa-fw fa-bolt"></i></a>
+			<a href ="#"> <i class="fa fa-fw fa-bolt"></i></a>
+			</div>
+	<!-- FIN Seccion de NAVBAR -->
+
+
+	<!-- CONTENIDO -->
+
+<div id="main">
+	<!-- Seccion DE PRUEBA DE EFECTOS -->
+ <div id="aos-demo" class="aos-all"></div>
+ 		<script src="js/aos.js"></script>
+		<div id    ="transcroller-body" class="aos-all">
+		<div class ="aos-item" data-aos="fade-up">
+		<div class ="aos-item__inner"><h3>1</h3></div>
+		</div>
+		<div class ="aos-item" data-aos="fade-down">
+		<div class ="aos-item__inner"><h3>2</h3></div>
+		</div>
+		<div class ="aos-item" data-aos="zoom-out-down">
+		<div class ="aos-item__inner"><h3>3</h3></div>
+		</div>
+				<script>
+			      AOS.init({
+			        easing: 'ease-in-out-sine'
+			      });
+			    </script>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
